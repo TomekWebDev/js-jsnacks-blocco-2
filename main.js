@@ -52,23 +52,27 @@ let array1 = ["a", "b", "c", "d", "e"]
 
 let array2 = ["1", "2", "3"]
 
+console.log("array1 has ", array1.length, " elements");
+console.log("array2 has ", array2.length, " elements");
+
 
 if(array1.length < array2.length){
     let difference = array2.length - array1.length;
     for(i = 0; i < difference; i++){
         array1.push("test")
     }
+    console.log("array1 was smaller and now has ", array1.length, " elements: ", array1);
 }
 else if(array2.length < array1.length){
     let difference = array1.length - array2.length;
     for(i = 0; i < difference; i++){
         array2.push("test")
     }
+    console.log("array2 was smaller and now has ", array2.length, " elements: ", array2);
 }
 else{
     console.log("already the same");
 }
 
-console.log(array1);
-console.log(array2);
+
 
