@@ -15,6 +15,8 @@
 
 // // Esercizio 2
 
+// pescare cose a caso da  due array diverse e unirle
+
 // let nomi = ["Obi-Wan", "Luke", "Han", "Jar-Jar", "C3", "Jabba", "Padmè", "Qui-Gon"];
 
 // let cognomi = ["Kenobi", "Skywalker", "Solo", "Binks", "P8", "The Hut", "Amidala", "Jinn"]
@@ -26,19 +28,47 @@
 // console.log((nomeRandom, nomi[nomeRandom]) + " " + (cognomeRandom, cognomi[cognomeRandom]));
 
 
-// Esercizio 3
+// // Esercizio 3
 
-// for (i=0; i < 20; i++){
 
+// let numeri = ["3", "1", "3", "1", "3", "1", "3", "1", "3"]
+
+// let somma = 0;
+
+// //ciclo impostato per tracciare gli indici dispari
+
+// for(i = 1; i < numeri.length; i += 2){
+
+//         somma += parseInt(numeri[i])
 // }
 
-let numeri = ["3", "1", "3", "1", "3", "1", "3", "1", "3"]
+// console.log(somma);
 
-let somma = 0;
 
-for(i = 1; i < numeri.length; i += 2){
 
-        somma += parseInt(numeri[i])
+// Esercizio 4
+
+let array1 = ["a", "b", "c", "d", "e"]
+
+let array2 = ["1", "2", "3"]
+
+
+if(array1.length < array2.length){
+    let difference = array2.length - array1.length;
+    for(i = 0; i < difference; i++){
+        array1.push("test")
+    }
+}
+else if(array2.length < array1.length){
+    let difference = array1.length - array2.length;
+    for(i = 0; i < difference; i++){
+        array2.push("test")
+    }
+}
+else{
+    console.log("already the same");
 }
 
-console.log(somma);
+console.log(array1);
+console.log(array2);
+
